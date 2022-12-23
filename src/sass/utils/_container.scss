@@ -1,4 +1,4 @@
-.conteiner {
+.container {
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
@@ -11,10 +11,12 @@
   //   breakpoint  768px for tablet screen
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding: 0px 32px;
   }
 
   //   breakpoint  1200px for descktop screen
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    padding: 0px 16px;
   }
 }

@@ -1,8 +1,15 @@
 @import './base/reset';
 @import './utils/common';
-@import './utils/conteiner';
+@import './utils/container';
 @import './utils/variables';
 @import './utils/breakpoints';
+@import './utils/placeholder';
+@import './utils/vis-hidden';
+@import './modals/about-modal.scss';
+@import './modals/franchise-modal.scss';
+@import './modals/locations-modal.scss';
+@import './modals/more-modal.scss';
+@import './modals/now-modal.scss';
 @import './about';
 @import './advantages';
 @import './contacts';
@@ -12,7 +19,6 @@
 @import './header';
 @import './hero';
 @import './products';
-
 
 
 

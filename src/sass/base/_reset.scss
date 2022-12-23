@@ -4,9 +4,11 @@ h3,
 h4,
 h5,
 p,
-ul {
+ul 
+{
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 img {
@@ -18,3 +20,14 @@ img {
   object-position: center;
 }
 
+a { 
+  text-decoration: none; 
+  text-transform: none;
+}
+
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
