@@ -1,22 +1,18 @@
+
 .container {
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 15px;
-
-  //   breakpoint  480px for mobile screen
-  @media screen and (min-width: 480px) {
-    width: 480px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @include mobile {
+      width: $mobile;
   }
 
-  //   breakpoint  768px for tablet screen
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 0px 32px;
+  @include tablet {
+      width: $tablet;
+      padding: 0px 32px;
   }
 
-  //   breakpoint  1200px for descktop screen
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding: 0px 16px;
+  @include desktop {
+      width: $desktop;
+      padding: 0px 16px;
   }
 }
