@@ -1,0 +1,29 @@
+.link,
+.list {
+  list-style: none;
+  color: currentColor;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  object-position: center;
+}
+
