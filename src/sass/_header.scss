@@ -36,6 +36,7 @@
 
   & .mobile-menu-container {
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
 
     position: fixed;
@@ -50,6 +51,7 @@
 
     &.is-open {
       opacity: 1;
+      visibility: visible;
       pointer-events: all;
 
       transform: translateX(0);
