@@ -1,18 +1,59 @@
+// .container {
+//   margin-right: auto;
+//   margin-left: auto;
+//   padding: 0 20px;
+
+//   //   breakpoint  480px for mobile screen
+//   @media screen and (min-width: 480px) {
+//     width: 480px;
+//   }
+
+//   //   breakpoint  768px for tablet screen
+//   @media screen and (min-width: 768px) {
+//     width: 768px;
+//     padding: 0px 32px;
+//   }
+
+//   //   breakpoint  1200px for descktop screen
+//   @media screen and (min-width: 1200px) {
+//     width: 1200px;
+//     padding: 0px 16px;
+//   }
+// }
+
+
+// .container {
+//   margin: 0 auto;
+//   padding: 0 20px;
+//   @include mobile {
+//       max-width: 480px;
+//   }
+
+//   @include tablet {
+//       width: 768px;
+//       padding: 0px 32px;
+//   }
+
+//   @include desktop {
+//       width: 1200px;
+//       padding: 0px 16px;
+//   }
+// }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+
   @include mobile {
-      width: $mobile;
+    max-width: 480px;
   }
 
   @include tablet {
-      width: $tablet;
-      padding: 0px 32px;
+    max-width: 768px;
   }
 
   @include desktop {
-      width: $desktop;
-      padding: 0px 16px;
+    max-width: 1200px;
   }
 }
