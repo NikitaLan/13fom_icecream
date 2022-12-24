@@ -2,6 +2,17 @@
 
 .section {
     background-color: var(--color-bg);
+<<<<<<< Updated upstream
+=======
+
+    @include tablet {
+        max-width: 768px;
+    }
+
+    @include {
+        max-width: 1200px;
+    }
+>>>>>>> Stashed changes
 }
 
 // .visually-hidden {}
