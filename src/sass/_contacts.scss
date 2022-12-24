@@ -1,0 +1,185 @@
+// .contacts {}
+
+.section {
+    background-color: var(--color-bg);
+}
+
+// .visually-hidden {}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background: var(--color-bg);
+}
+
+.contacts__item {
+    width: 280px;
+    height: 412px;
+    padding-left: 32px;
+    padding-right: 58px;
+    background: var(--color-primary);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
+
+.contacts__institution {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 4 22px;
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--color-secondary);
+    background-color: var(--color-accent);
+}
+
+.contacts__address {
+    padding-top: 20px;
+    width: 216px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts__address-city {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: var(--color-secondary);
+}
+
+.contacts__address-str {
+    margin-top: 8px;
+    padding-bottom: 24px;
+    max-width: 212px;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: var(--color-address);
+}
+
+.contacts__working-week {
+    padding-bottom: 24px;
+    width: 216px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts__working-time {
+    padding-top: 24px;
+}
+
+.contacts__working-time-weekend {
+    padding-top: 8px;
+}
+
+.contacts__working-day {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: var(--color-secondary);
+}
+
+.contacts__working-hours {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: var(--color-copyright);
+}
+
+.contacts__item-connection {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.contacts__item-tel {
+    padding-bottom: 6px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--color-secondary)
+}
+
+.contacts__item-mail {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.60;
+    color: var(--color-secondary)
+}
+
+.contacts__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts__button-location {
+    width: 196px;
+    max-width: 196px;
+    border: none;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    color: var(--color-secondary);
+    background-color: var(--color-accent);
+}
+
+.contacts__button-location:hover {
+    background-color: var(--color-hover);
+}
+
+.contacts__button-location:focus {
+    background-color: var(--color-hover);
+    color: #ffffff;
+    // fill:#ffffff;
+}
+
+.contacts__arrow-right-icon {
+    width: 5px;
+    height: 10px;
+    margin-left: 7px;
+    fill: currentColor;
+}
+
+.contacts__arrow-right-icon.contacts__button-location:focus {
+    fill: #ffffff;
+}
+
+.contacts__button-franchise {
+    width: 196px;
+    max-width: 196px;
+    margin-top: 16px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    border: 2px solid var(--color-accent);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    background-color: var(--color-bg);
+    color: #000000;
+}
+
+.contacts__button-franchise:hover {
+    border-color: var(--color-hover);
+}
+
+.contacts__button-franchise:focus {
+    border-color: var(--color-hover);
+    color: #ffffff;
+}
