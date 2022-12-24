@@ -1,0 +1,98 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="modal__icon-wrap" data-modal-close>
+      <svg class="modal__icon" width="20" height="20">
+        <use href="./images/svg-sprite.svg#icon-modal-close"></use>
+      </svg>
+    </div>
+    <p class="modal__title">Chololate icecream</p>
+    <div class="modal__img--wrap">
+      <img
+        class="modal__img"
+        srcset="
+          ./images/modals/modals/about-modal/chololate-icecream.png    1x,
+          ./images/modals/modals/about-modal/chololate-icecream-2x.png 2x
+        "
+        src="./images/modals/modals/about-modal/chololate-icecream.png"
+        alt="Chololate Icecream"
+        width="132"
+        height="132"
+      />
+    </div>
+    <ul class="composition">
+      <li class="composition__item">
+        <div class="composition__weight">
+          <span class="composition__namber">320</span>
+        </div>
+        <span class="composition__unit-measurement">kcal</span>
+      </li>
+      <li class="composition__item">
+        <div class="composition__weight">
+          <span class="composition__namber">4g</span>
+        </div>
+        <span class="composition__unit-measurement">Prote...</span>
+      </li>
+      <li class="composition__item">
+        <div class="composition__weight">
+          <span class="composition__namber">8,2g</span>
+        </div>
+        <span class="composition__unit-measurement">Fats</span>
+      </li>
+      <li class="composition__item">
+        <div class="composition__weight">
+          <span class="composition__namber">40,4g</span>
+        </div>
+        <span class="composition__unit-measurement">Carbs</span>
+      </li>
+    </ul>
+    <p class="modal__subtitle">Ingredients</p>
+    <ul class="ingredients">
+      <li class="ingredients__item">
+        <span>Milk</span>
+        <span>100ml</span>
+      </li>
+      <li class="ingredients__item">
+        <span>Belgian chocolate</span>
+        <span>20g</span>
+      </li>
+      <li class="ingredients__item">
+        <span>Cream</span>
+        <span>150 ml</span>
+      </li>
+      <li class="ingredients__item">
+        <span>Cocoa powder</span>
+        <span>30g</span>
+      </li>
+      <li class="ingredients__item">
+        <span>Sugar</span>
+        <span>40g</span>
+      </li>
+      <li class="ingredients__item">
+        <span>Vanilla sugar</span>
+        <span>10g</span>
+      </li>
+    </ul>
+    <form>
+      <input
+        type="text"
+        name="user-name"
+        class="form__input"
+        placeholder="Name"
+        required
+      />
+      <input
+        type="tel"
+        name="user-tel"
+        class="form__input"
+        placeholder="Phone"
+        required
+      />
+      <textarea
+        name="user-comment"
+        class="form__textarea"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="modal__button">Submit</button>
+    </form>
+  </div>
+</div>
