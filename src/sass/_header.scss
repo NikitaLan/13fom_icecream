@@ -1,0 +1,171 @@
+// add Kostiantyn Koshyk
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #84a178; // --temp
+
+  & .image {
+    width: 40px;
+    height: 37px;
+
+    @include tablet {
+      width: 48px;
+      height: 44px;
+    }
+
+    @include desktop {
+      width: 60px;
+      height: 65px;
+    }
+  }
+
+  & .site-nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  & .mobile-burger-btn {
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  & .mobile-menu-container {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg);
+
+    transform: translateX(-3%);
+
+    &.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+
+      transform: translateX(0);
+      transition: opacity var(--transition-duration) var(--cubic-bezier),
+        transform var(--transition-duration) var(--cubic-bezier);
+    }
+
+    & .menu-wrap {
+      display: flex;
+    }
+
+    & .logo {
+      margin-top: 12px;
+      margin-left: 32px;
+    }
+
+    & .mobile-close-btn {
+      margin-top: 16px;
+      margin-left: auto;
+      margin-right: 20px;
+
+      & .icon-burger-menu {
+        fill: var(--color-primary);
+
+        transition: fill var(--transition-duration) var(--cubic-bezier);
+      }
+
+      &:hover .icon-burger-menu {
+        fill: var(--color-secondary);
+      }
+    }
+
+    & .mobile-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 32px;
+      margin-top: 51px;
+
+      @include tablet {
+        gap: 40px;
+        margin-top: 76px;
+      }
+
+      & .link {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: calc(39 / 32);
+
+        transition: color var(--transition-duration) var(--cubic-bezier);
+
+        @include tablet {
+          font-size: 48px;
+          line-height: calc(59 / 48);
+        }
+
+        color: var(--color-primary);
+        &:hover,
+        &:focus {
+          color: var(--color-secondary);
+        }
+      }
+
+      & .mobile-item:last-child {
+        margin-top: 110px;
+      }
+      & .mobile-btn {
+        @include tablet {
+          display: none;
+        }
+      }
+    }
+
+    & .mobile-btn {
+      padding: 12px 35px;
+      @extend %button;
+    }
+  }
+
+  & .desktop-menu {
+    display: flex;
+    gap: 20px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    color: var(--color-primary);
+
+    & .desktop-link {
+      color: currentColor;
+      transition: color var(--transition-duration) var(--cubic-bezier);
+    }
+    & .desktop-link:hover,
+    & .desktop-link:focus {
+      color: var(--color-accent);
+    }
+
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  & .desktop-btn {
+    padding: 12px 35px;
+    margin-left: 32px;
+    @extend %button;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @include desktop {
+      margin-left: 204px;
+    }
+  }
+}
