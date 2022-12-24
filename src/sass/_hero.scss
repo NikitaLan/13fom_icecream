@@ -16,23 +16,7 @@
     }
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 20px;
-    @include mobile {
-        width: $mobile;
-    }
-  
-    @include tablet {
-        width: $tablet;
-        padding: 0px 32px;
-    }
-  
-    @include desktop {
-        width: $desktop;
-        padding: 0px 16px;
-    }
-}
+
 
 .hero__title {
     display: block;
