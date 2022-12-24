@@ -1,33 +1,55 @@
-    <section class="section">
-      <div class="container-product">
-        <label for="" class="label-title">100% NATURAL</label>
-        <h2 class="title">Products</h2>
-        <ul class="products">
-          <li class="products__list cream">
-            <h3 class="products__title">ICE CREAM</h3>
-            <p class="products__text">
-              Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
-              stabilizer
-            </p>
-            <button type="button" class="products__button">ok happines</button>
-          </li>
-          <li class="products__list coffee">
+<section class="section" id="products">
+  <div class="container-product container">
+    <p class="label-title">100% NATURAL</p>
+    <h2 class="title">Products</h2>
+    <ul class="products">
+      <li class="products__list cream">
+        <div class="product__items">
+          <h3 class="products__title">ICE CREAM</h3>
+          <p class="products__text">
+            Soft ice cream with a delicate taste. Made with milk, cream, sugar
+            and natural stabilizer
+          </p>
+          <button type="button" class="products__button">
+            <svg class="product__icon">
+              <use href="/src/images/svg-sprite.svg#icon-Arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="products__list coffee">
+        <div class="product__items">
+          <div>
             <h3 class="products__title">ICE COFFEE</h3>
             <p class="products__text">
-              Fragrant invigorating drink created from 100% natural ingredients without the use of
-              preservatives and flavor enhancers
+              Fragrant invigorating drink created from 100% natural ingredients
+              without the use of preservatives and flavor enhancers
             </p>
-            <button type="button" class="products__button">ok hajja</button>
-          </li>
+          </div>
+          <div>
+            <button type="button" class="products__button">
+              <svg class="product__icon">
+                <use href="/src/images/svg-sprite.svg#icon-Arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </li>
 
-          <li class="products__list milkshake">
-            <h3 class="products__title">MILKSHAKES</h3>
-            <p class="products__text">
-              Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries
-              and other sweets of your choice
-            </p>
-            <button type="button" class="products__button">ok hajja</button>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <li class="products__list milkshake">
+        <div class="product__items">
+          <h3 class="products__title">MILKSHAKES</h3>
+          <p class="products__text">
+            Sweet drinks based on milk and ice cream, supplemented with syrups,
+            fruits, berries and other sweets of your choice
+          </p>
+          <button type="button" class="products__button">
+            <svg class="product__icon">
+              <use href="/src/images/svg-sprite.svg#icon-Arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
