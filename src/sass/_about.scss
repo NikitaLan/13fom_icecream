@@ -1,0 +1,242 @@
+.about {
+   padding-top: 61px;
+   background-color: var(--color-bg);
+
+   @include tablet {
+      padding-top: 60px;
+   }
+}
+
+.about__label {
+   margin-bottom: 12px;
+   color: var(--color-primary);
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.22;
+   text-align: center;
+   text-transform: uppercase;
+
+   @include tablet {
+      font-weight: 800;
+      font-size: 22px;
+      line-height: 1.23;
+   }
+   @include desktop {
+      font-size: 30px;
+      line-height: 1.23;
+   }
+}
+
+.about__title {
+   margin-bottom: 32px;
+   font-family: var(--secondary-font);
+   color: var(--color-primary);
+   font-size: 30px;
+   line-height: 1.26;
+   text-align: center;
+   text-transform: uppercase;
+
+   @media screen and (max-width: 767px) {
+      width: 200px;
+      margin-right: auto;
+      margin-left: auto;
+   }
+   @include tablet {
+      margin-bottom: 72px;
+      font-size: 34px;
+      line-height: 1.25;
+   }
+   @include desktop {
+      margin-bottom: 82px;
+      font-size: 36px;
+      line-height: 1.26;
+      letter-spacing: 0.06em;
+   }
+}
+
+.about-wrapper {
+   @include tablet {
+      display: flex;
+   }
+}
+
+.about__bg-img {
+   margin-bottom: 62px;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+   width: 279px;
+   height: 278px;
+   border-radius: 50%;
+   background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)),
+    #d9d9d9;
+    box-shadow: 0px 4.49px 16.82px rgba(153, 114, 23, 0.25);
+
+   @include tablet {
+      width: 330px;
+      height: 330px;
+      margin-right: 38px;
+      margin-left: 0;
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+   }
+   @include desktop {
+      width: 490px;
+      height: 490px;
+      margin-right: 110px;
+      margin-left: 0;
+      box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+   }
+
+   &::after {
+      content: '';
+      position: absolute;
+      top: 22px;
+      width: 279px;
+      height: 278px;
+      display: block;
+      background-image: url(../images/about/about-cow-mob.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      border-radius: 50%;
+
+      @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-cow-mob2x.jpg);         
+      }
+
+      @include tablet {
+         top: 26px;
+         width: 330px;
+         height: 330px;
+         background-image: url(../images/about/about-cow-tab.jpg);
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-cow-tab2x.jpg);         
+         }
+      }
+      @include desktop {
+         top: 39px;
+         width: 490px;
+         height: 490px;
+         background-image: url(../images/about/about-cow.jpg);
+         @media (min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi),
+         (min-resolution: 2dppx) {
+            background-image: url(../images/about/about-cow2x.jpg);         
+         }
+      }
+   }
+}
+
+.about__wrap-text {
+   @include tablet {
+      width: 334px;
+      padding-top: 8px;
+   }
+   @include desktop {
+      width: 457px;
+      padding-top: 90px;
+   }
+}
+
+.about__list {
+   padding-left: 30px;
+   padding-right: 30px;
+   margin-bottom: 10px;
+
+   @include tablet {
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: 32px;
+   }
+   @include desktop {
+      margin-bottom: 54px;
+   }
+}
+
+.about__item {
+   &:first-child {
+   margin-bottom: 4px;
+   }
+   &:last-child {
+      @media screen and (max-width: 767px) {
+         position: absolute;
+         white-space: nowrap;
+         width: 1px;
+         height: 1px;
+         overflow: hidden;
+         border: 0;
+         padding: 0;
+         clip: rect(0 0 0 0);
+         clip-path: inset(50%);
+         margin: -1px;
+      }
+      @include tablet {
+         padding-right: 110px;
+      }
+      @include desktop {
+         padding-right: 0px;
+      }
+   }
+   &:not(:last-child) {
+      @include tablet {
+         margin-bottom: 8px;
+      }
+   }
+}
+
+.about__text {
+   color: var(--color-primary);
+   font-size: 12px;
+   line-height: 1.76;
+   text-align: center;
+   @include tablet {
+      text-align: left;
+   }
+   @include desktop {
+      font-size: 16px;
+   }
+
+   &-second {
+      line-height: 1.62;
+      @media screen and (max-width: 767px) {
+         letter-spacing: 0;         
+      }
+      @include tablet {
+         line-height: 1.76;
+      }
+      @include desktop {
+         font-size: 14px;
+         line-height: 1.94;
+      } 
+   }
+
+   &-third {
+      @include tablet {
+         line-height: 1.94;
+      }
+      @include desktop {
+         font-size: 14px;
+      } 
+   }
+}
+
+.about__button {
+   margin-left: auto;
+   margin-right: auto;
+   @extend %button;
+   @include tablet {
+      margin-left: 0;
+      margin-right: 0;
+   }
+}
+
+.about__button-icon {
+   margin-left: 4px;
+}
