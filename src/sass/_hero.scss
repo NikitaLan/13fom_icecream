@@ -76,6 +76,7 @@
     }
     
     &__button {
+        cursor: $cursor;
         font-weight: 600;
         font-size: 12px;
         line-height: calc(15 / 12); 
@@ -92,9 +93,9 @@
         }
     }
 
-    &_product {
+    &__product {
         z-index: 1;
-        cursor: pointer;
+        cursor: $cursor;
         transition: background-color var(--transition-duration) var(--cubic-bezier);
     
     }
@@ -108,7 +109,7 @@
     
     &__link {
         z-index: 1;
-        cursor: pointer;
+        cursor: $cursor;
         margin-left: 12px;
         font-weight: 600;
         font-size: 12px;
