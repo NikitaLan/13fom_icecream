@@ -199,8 +199,8 @@
         font-size: 12px;
         line-height: calc(17 / 12);
         margin-bottom: 12px;
-        fill: red;
-        // color: var(--color-primary);
+        
+        color: var(--color-primary);
         @include desktop {
             margin-bottom: 24px;
         }
@@ -212,9 +212,8 @@
     }
     
     &__icon {
-        // fill: var(--color-primary);
-        color: red;
-        fill: red;
+        fill: var(--color-primary);
+        
     }
 }
 

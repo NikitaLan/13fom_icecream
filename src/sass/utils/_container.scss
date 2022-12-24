@@ -26,15 +26,16 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   
-  background-image: url(../images/products/bg-mobile.jpg);
+  // background-image: url(../images/products/bg-mobile.jpg);
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/products/bg-mobile@2x.jpg);
-  }
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../images/products/bg-mobile@2x.jpg);
+  // }
+
 
   @include mobile {
     max-width: 480px;
