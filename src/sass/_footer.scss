@@ -1,0 +1,137 @@
+.footer {
+  background-color: var(--color-bg);
+}
+.footer-top {
+  padding-top: 60px;
+  @include tablet {
+    padding-top: 40px;
+  }
+  @include desktop {
+    padding-top: 120px;
+  }
+}
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    border-bottom: 1px solid #e1e1e1;
+  }
+  @include tablet {
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer-title {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  max-width: 238px;
+  padding-bottom: 60px;
+  @include tablet {
+    gap: 8px;
+    max-width: 352px;
+    padding-bottom: 32px;
+  }
+  @include desktop {
+    max-width: 100%;
+    padding-bottom: 60px;
+  }
+}
+.footer-title__text {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-align: left;
+}
+.footer-title__text--small {
+  font-size: 18px;
+  line-height: 1.22;
+  @include tablet {
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+  }
+  @include desktop {
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+}
+.footer-title__text--large {
+  max-width: 200px;
+  font-size: 34px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  @include tablet {
+    font-size: 48px;
+    line-height: 1.23;
+    letter-spacing: 0.06em;
+  }
+  @include desktop {
+    font-size: 58px;
+    line-height: 1.22;
+    text-transform: uppercase;
+    max-width: 100%;
+  }
+
+  .footer-contacts {
+    margin: 0 auto;
+  }
+}
+.social-links {
+  padding-bottom: 20px;
+}
+.soc-list {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  @include tablet {
+    gap: 30px;
+    margin-bottom: 34px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+  }
+}
+.footer-tel {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+  padding-bottom: 40px;
+  @include tablet {
+    font-size: 14px;
+  }
+}
+.footer-tel--text {
+  color: var(--color-secondary);
+}
+.footer-tel--number {
+  color: var(--color-primary);
+}
+
+.footer-copyright {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  @include desktop {
+    border-top: 1px solid #e1e1e1;
+  }
+}
+.footer-copyright-text {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #7a7a7a;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 200px;
+  @include tablet {
+    max-width: 100%;
+    padding: 12px;
+  }
+}
