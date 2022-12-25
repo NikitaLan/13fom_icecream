@@ -2,7 +2,19 @@
 .header {
   display: flex;
   align-items: center;
-  background-color: #84a178; // --temp
+  padding-top: 12px;
+  padding-bottom: 50px;
+  background-color: #84a178;
+
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 14px;
+  }
+
+  @include desktop {
+    padding-top: 8px;
+    padding-bottom: 45px;
+  }
 
   & .image {
     width: 40px;
@@ -39,6 +51,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 5;
 
     position: fixed;
     top: 0;
@@ -128,7 +141,12 @@
 
     & .mobile-btn {
       padding: 12px 35px;
+
       @extend %button;
+
+      @include mobile {
+        margin-left: 0;
+      }
     }
   }
 
