@@ -10,13 +10,10 @@
     }
   }
   .footer-top {
-    padding-top: 60px;
     @include tablet {
-      padding-top: 40px;
       padding-bottom: 32px;
     }
     @include desktop {
-      padding-top: 120px;
       padding-bottom: 40px;
     }
   }
