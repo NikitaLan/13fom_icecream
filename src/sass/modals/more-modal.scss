@@ -1,0 +1,33 @@
+.modal--more-modal {
+  padding-left: 28px;
+  padding-right: 28px;
+  @media screen and (min-width:648px) {
+    padding: 32px 60px;
+  }
+}
+
+.modal__title--more-modal {
+  font-size: 16px;
+  line-height: 1.5;
+  @media screen and (min-width:648px) {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+  }
+}
+
+.modal__video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  @media screen and (min-width:648px) {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+  }
+}
+
+.modal__text {
+  line-height: 1.4;
+  text-align: left;
+}
