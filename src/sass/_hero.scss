@@ -1,20 +1,5 @@
 // Hero wrapper----------------------------
-summary {
-  display: block;
-}
 
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary::before {
-  content: url(../images/arrow-right-for-details.svg);
-  padding-right: 0.5em;
-}
-
-details[open] > summary {
-  color: transparent;
-}
 
 
 
@@ -34,7 +19,6 @@ details[open] > summary {
 }
 
 .hero__title {
-  animation: animate__animated animate__bounceIn 5s;
   display: block;
   max-width: 247px;
   font-family: var(--secondary-font);
@@ -54,6 +38,25 @@ details[open] > summary {
     line-height: calc(48 / 38);
   }
 }
+
+// Description ----------------------
+summary {
+  display: block;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: url(../images/arrow-right-for-details.svg);
+  padding-right: 0.5em;
+}
+
+details[open] > summary {
+  color: transparent;
+}
+
 
 // Buttuns + anchor----------------------------
 
