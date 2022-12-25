@@ -12,7 +12,7 @@
 
     @include tablet {
         max-width: 768px;
-        margin: 0 auto;
+        // margin: 0 auto;
     }
     @include desktop {
         max-width: 1200px;
@@ -23,6 +23,7 @@
 
 .contacts__list {
     max-width: 280px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,16 +32,16 @@
     background: var(--color-bg);
 
     @include mobile {
-        max-width: 280px;
+        max-width: 320px;
     }
 
     @include tablet {
-        // max-width: 768px;
+        max-width: 768px;
         flex-direction: row;
     }
     @include desktop {
         gap:32px;
-        // max-width: 1168px;
+        max-width: 1168px;
     }
 
 }
@@ -48,6 +49,7 @@
 .contacts__item {
     max-width: 280px;
     padding-left: 32px;
+    padding-right: 58px;
     background: var(--color-primary);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -63,6 +65,10 @@
         padding-left: 40px;
         flex-basis: calc((100% - 64px) / 3);
     }
+}
+
+.contacts__item:nth-child(2) {
+    padding-right: 36px;
 }
 
 .contacts__institution {
@@ -92,11 +98,14 @@
 .contacts__address {
     padding-top: 20px;
     max-width: 216px;
-    border-bottom: 1px solid #E1E1E1;
-    margin: 0;
+    // border-bottom: 1px solid #E1E1E1;
+    // margin: 0;
     @include tablet {
-        // width: 159px;
+        max-width: 176px;
     }
+    @include desktop {
+        max-width: 288px;
+        }
 }
 
 .contacts__address-city {
@@ -119,13 +128,14 @@
 
 .contacts__address-str {
     margin-top: 8px;
-    padding-bottom: 24px;
+    // padding-bottom: 24px;
     max-width: 212px;
     font-size: 12px;
     line-height: 1.83;
     letter-spacing: 0.04em;
     color: var(--color-address);
     @include tablet {
+        max-width: 173px;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.83;
@@ -137,10 +147,29 @@
     }
 }
 
+.contacts__address-str::after {
+    content: '';
+    display: inline-block;
+    margin-top: 24px;
+    width: 216px;
+    height: 1px;
+    background-color: #E1E1E1;
+    @include tablet {
+        width: 176px;
+    }
+        @include desktop {
+            width: 288px;
+        }
+}
+
 .contacts__working-week {
-    padding-bottom: 24px;
-    // width: 216px;
-    border-bottom: 1px solid #E1E1E1;
+    max-width: 216px;
+     @include tablet {
+        max-width: 176px;
+    }
+    @include tablet {
+        max-width: 288px;
+    }
 }
 
 .contacts__working-time {
@@ -149,6 +178,21 @@
 
 .contacts__working-time-weekend {
     padding-top: 8px;
+}
+
+.contacts__working-time-weekend::after {
+    content: '';
+    display: inline-block;
+    margin-top: 24px;
+    width: 216px;
+    height: 1px;
+    background-color: #E1E1E1;
+    @include tablet {
+        width: 176px;
+        }
+    @include desktop {
+        width: 288px;
+    }
 }
 
 .contacts__working-day {
@@ -186,6 +230,13 @@
     padding-top: 24px;
     padding-bottom: 24px;
     max-width: 130px;
+
+    @include tablet {
+    max-width: 151px;
+    }
+    @include tablet {
+        max-width: 173px;
+    }
 }
 
 .contacts__item-tel {
