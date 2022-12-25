@@ -55,6 +55,11 @@
         cursor: pointer;
         align-items: center;
         justify-content: center;
+
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
         @media screen and (min-width:768px) {
         width: 24px;
         height: 24px;
@@ -121,6 +126,9 @@
         background-color: #F8D24E;
         border-radius: 10px;
 
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         @media screen and (min-width:768px) {
             font-size: 14px;
