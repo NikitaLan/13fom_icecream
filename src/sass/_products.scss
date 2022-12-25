@@ -53,14 +53,6 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
-
-  @media screen and (max-width: 767px) {
-    margin-bottom: 240px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
-  }
 }
 
 .products {
@@ -161,12 +153,21 @@
 .cream {
   text-align: center;
   position: relative;
-  margin-top: 260px;
+  margin-top: 160px;
   background-color: #aec6a5;
 
   @media screen and (max-width: 767px) {
     width: 280px;
     height: 420px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 428px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 536px;
+    margin-top: 260px;
   }
 }
 
@@ -213,6 +214,7 @@
 .products__button {
   background-color: transparent;
   border: none;
+
   cursor: $cursor;
 
   @media screen and (max-width: 767px) {
@@ -224,7 +226,11 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
     display: flex;
-    margin-top: 50px;
+    padding: 20px 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 70px;
   }
 }
 
@@ -232,11 +238,20 @@
   align-items: center;
   position: relative;
   background-color: #efd478;
-  margin-top: 260px;
+  margin-top: 160px;
 
   @media screen and (max-width: 767px) {
     width: 280px;
     height: 420px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 428px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 536px;
+    margin-top: 260px;
   }
 }
 
@@ -311,12 +326,21 @@
 .milkshake {
   align-items: center;
   background-color: #d6936d;
-  margin-top: 260px;
+  margin-top: 160px;
   position: relative;
 
   @media screen and (max-width: 767px) {
     width: 280px;
     height: 420px;
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 428px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 536px;
+    margin-top: 260px;
   }
 }
 
@@ -343,7 +367,7 @@
     top: -100px;
   }
 
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: 302px;
     height: 302px;
     top: -200px;
@@ -373,7 +397,7 @@
     top: -110px;
   }
 
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     background-image: url(../images/products/milkshake-desc.jpg);
     width: 302px;
     height: 302px;
@@ -392,12 +416,15 @@
   width: 40px;
   height: 16px;
   fill: var(--color-secondary);
+  cursor: $cursor;
+  position: absolute;
+  bottom: 16px;
+  left: 115px;
 
   @media screen and (min-width: 768px) {
-    position: absolute;
-    bottom: 16px;
-    left: 100px;
+    left: 90px;
   }
+
   @media screen and (min-width: 1200px) {
     left: 160px;
     bottom: 60px;
@@ -411,13 +438,5 @@
 
   @media screen and (max-width: 767px) {
     padding-top: 100px;
-  }
-
-  @media screen and (min-width: 768px) {
-    height: 428px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    height: 536px;
   }
 }
