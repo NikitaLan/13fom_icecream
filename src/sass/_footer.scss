@@ -1,13 +1,23 @@
 .footer {
   background-color: var(--color-bg);
+  max-width: $mobile;
+  margin: auto;
+  @include tablet {
+    min-width: $tablet;
+  }
+  @include desktop {
+    min-width: $desktop;
+  }
 }
 .footer-top {
   padding-top: 60px;
   @include tablet {
     padding-top: 40px;
+    padding-bottom: 32px;
   }
   @include desktop {
     padding-top: 120px;
+    padding-bottom: 40px;
   }
 }
 .footer-wrap {
@@ -19,7 +29,7 @@
   @include tablet {
     flex-flow: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
 }
 .footer-title {
@@ -27,15 +37,14 @@
   gap: 16px;
   flex-direction: column;
   max-width: 238px;
-  padding-bottom: 60px;
+  margin-bottom: 60px;
   @include tablet {
     gap: 8px;
     max-width: 352px;
-    padding-bottom: 32px;
+    margin-bottom: 0;
   }
   @include desktop {
     max-width: 100%;
-    padding-bottom: 60px;
   }
 }
 .footer-title__text {
@@ -47,6 +56,7 @@
 .footer-title__text--small {
   font-size: 18px;
   line-height: 1.22;
+  letter-spacing: 0;
   @include tablet {
     font-size: 26px;
     line-height: 1.23;
@@ -74,14 +84,18 @@
     text-transform: uppercase;
     max-width: 100%;
   }
-
-  .footer-contacts {
-    margin: 0 auto;
+}
+.footer-contacts {
+  @media screen and (min-width: 768px) {
+    align-self: center;
+    margin: 0;
+    padding-top: 41px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 18px;
   }
 }
-.social-links {
-  padding-bottom: 20px;
-}
+
 .soc-list {
   display: flex;
   gap: 20px;
@@ -95,14 +109,29 @@
     margin-bottom: 40px;
   }
 }
+.soc-list__item {
+  max-width: 162px;
+  height: 34px;
+}
+.soc-list__link {
+  fill: var(--color-bg);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--color-primary);
+  }
+}
 .footer-tel {
   font-weight: 700;
   font-size: 12px;
   line-height: 1.86;
+  letter-spacing: 0;
   text-align: right;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
   @include tablet {
     font-size: 14px;
+    margin-bottom: 0;
   }
 }
 .footer-tel--text {
@@ -125,7 +154,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
-  color: #7a7a7a;
+  color: var(--color-copyright);
   text-align: center;
   margin: 0 auto;
   padding: 20px;
