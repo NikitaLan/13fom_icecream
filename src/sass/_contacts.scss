@@ -2,7 +2,7 @@
 // CONTACTS
 
 .contacts {
-    max-width: 320px;
+    max-width: 480px;
     margin: 0 auto;
     background-color: var(--color-bg);
 
@@ -60,12 +60,40 @@
     @include desktop {
         max-width: 1200px;
         padding-left: 40px;
+        // padding-right: 40px;
         flex-basis: calc((100% - 64px) / 3);
+    }
+}
+
+.contacts__item:nth-child(1) {
+    padding-right: 58px;
+
+    @include tablet {
+        padding-right: 27px;
+    }
+    @include desktop {
+        padding-right: 40px;
     }
 }
 
 .contacts__item:nth-child(2) {
     padding-right: 36px;
+    @include tablet {
+        padding-right: 42px;
+    }
+    @include desktop {
+        padding-right: 32px;
+    }
+}
+
+.contacts__item:nth-child(3) {
+    padding-right: 58px;
+    @include tablet {
+        padding-right: 41px;
+    }
+    @include desktop {
+        padding-right: 44px;
+    }
 }
 
 .contacts__institution {
