@@ -1,5 +1,5 @@
 
-// .contacts {}
+// CONTACTS
 
 .contacts {
     max-width: 320px;
@@ -12,14 +12,11 @@
 
     @include tablet {
         max-width: 768px;
-        // margin: 0 auto;
     }
     @include desktop {
         max-width: 1200px;
     }
 }
-
-// .visually-hidden {}
 
 .contacts__list {
     max-width: 280px;
@@ -97,6 +94,7 @@
 
 .contacts__address {
     padding-top: 20px;
+    margin-bottom: 24px;
     max-width: 216px;
     // border-bottom: 1px solid #E1E1E1;
     // margin: 0;
@@ -128,7 +126,6 @@
 
 .contacts__address-str {
     margin-top: 8px;
-    // padding-bottom: 24px;
     max-width: 212px;
     font-size: 12px;
     line-height: 1.83;
@@ -147,19 +144,9 @@
     }
 }
 
-.contacts__address-str::after {
-    content: '';
-    display: inline-block;
-    margin-top: 24px;
-    width: 216px;
-    height: 1px;
-    background-color: #E1E1E1;
-    @include tablet {
-        width: 176px;
-    }
-        @include desktop {
-            width: 288px;
-        }
+.contacts__address-str:hover,
+.contacts__address-str:focus {
+    text-decoration: underline;
 }
 
 .contacts__working-week {
@@ -173,7 +160,24 @@
 }
 
 .contacts__working-time {
-    padding-top: 24px;
+    // padding-top: 24px;
+}
+
+.contacts__working-time::before {
+    content: '';
+    display: inline-block;
+    margin-bottom: 24px;
+    width: 216px;
+    height: 1px;
+    background-color: #E1E1E1;
+
+    @include tablet {
+        width: 176px;
+    }
+
+    @include desktop {
+        width: 288px;
+    }
 }
 
 .contacts__working-time-weekend {
@@ -246,12 +250,12 @@
     line-height: 1.6;
     color: var(--color-secondary);
     @include tablet {
-            font-size: 14px;
-            line-height: 1.5;
-        }
-         @include desktop {
-             font-size: 16px;
-        }
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    @include desktop {
+        font-size: 16px;
+    }
 }
 
 .contacts__item-mail {
@@ -300,7 +304,6 @@
     border-radius: 10px;
     padding-top: 12px;
     padding-bottom: 12px;
-    // margin-top: 20px;
     text-align: center;
     font-weight: 600;
     font-size: 14px;
@@ -316,7 +319,6 @@
 .contacts__button-location:focus {
     background-color: var(--color-hover);
     color: #ffffff;
-    // fill:#ffffff;
 }
 
 .contacts__arrow-right-icon {
@@ -333,8 +335,6 @@
 .contacts__button-franchise {
     width: 196px;
     max-width: 196px;
-    // margin-top: 16px;
-    // margin-bottom: 60px;
     border-radius: 10px;
     border: 2px solid var(--color-accent);
     padding-top: 12px;
