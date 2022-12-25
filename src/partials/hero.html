@@ -12,7 +12,7 @@
   </div>
   <div>
     <ul class="hero-img">
-      <li class="hero-img_dots">
+      <li class="hero-img__dots">
         <picture>
           <source
             srcset="
@@ -48,7 +48,7 @@
           />
         </picture>
       </li>
-      <li class="hero-img_icecream">
+      <li class="hero-img__icecream">
         <picture>
           <source
             srcset="
@@ -84,7 +84,7 @@
           />
         </picture>
       </li>
-      <li class="hero-img_varieties">
+      <li class="hero-img__varieties">
         <picture>
           <source
             srcset="
@@ -116,17 +116,22 @@
   <div>
     <ul class="hero-description">
       <li class="hero-description__item">
-        <p class="hero-description_paragraph">
+        <p class="hero-description__paragraph">
           Ice cream to any taste. Ice cream is made from a selected milk mixture
           and served in a crispy cup
         </p>
       </li>
       <li>
-        <a class="hero-description__link" href="">
-          <svg class="hero-description__icon" width="40" height="16">
-            <use href="./images/svg-sprite.svg#icon-Arrow"></use>
-          </svg>
-        </a>
+          <details>
+            <summary> 
+              <a class="hero-description__link">
+                <svg class="hero-description__icon" width="40" height="16">
+                  <use href="./images/svg-sprite.svg#icon-Arrow">
+                  </use>
+                </svg>
+              </a>
+            </summary>
+          </details>
       </li>
     </ul>
   </div>
