@@ -6,6 +6,10 @@
     margin: 0 auto;
     background-color: var(--color-bg);
 
+    @include mobile {
+        max-width: 480px;
+    }
+
     @include tablet {
         max-width: 768px;
         margin: 0 auto;
@@ -18,6 +22,7 @@
 // .visually-hidden {}
 
 .contacts__list {
+    max-width: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +31,7 @@
     background: var(--color-bg);
 
     @include mobile {
-
+        max-width: 280px;
     }
 
     @include tablet {
@@ -34,33 +39,29 @@
         flex-direction: row;
     }
     @include desktop {
-        max-width: 1168px;
+        gap:32px;
+        // max-width: 1168px;
     }
 
 }
 
 .contacts__item {
-    // width: 280px;
-    // height: 412px;
+    max-width: 280px;
     padding-left: 32px;
-    // padding-right: 58px;
     background: var(--color-primary);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
     @include tablet {
-        // max-width: 159px;
-        max-height: 537px;
-        // max-width: 768px;
+        max-width: 768px;
         padding-left: 24px;
-        // padding-right: 27px;
-        flex-basis: calc((100% - 32px) / 3)
+        padding-right: 27px;
+        flex-basis: calc((100% - 32px) / 3);
         }
     @include desktop {
-        // width: 224px;
-        // height: 537px;
         max-width: 1200px;
         padding-left: 40px;
+        flex-basis: calc((100% - 64px) / 3);
     }
 }
 
@@ -78,15 +79,19 @@
 
     @include tablet {
         padding: 4px 13px;
-    }
+        font-size: 14px;
+        line-height: 1.83;
+        }
     @include desktop {
         padding: 4px 14px;
+        font-size: 16px;
+        line-height: 1.4;
     }
 }
 
 .contacts__address {
     padding-top: 20px;
-    // width: 216px;
+    max-width: 216px;
     border-bottom: 1px solid #E1E1E1;
     margin: 0;
     @include tablet {
@@ -103,15 +108,19 @@
 
     @include tablet {
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.83;
             }
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.86;
+    }
 }
 
 .contacts__address-str {
     margin-top: 8px;
     padding-bottom: 24px;
-    // max-width: 159px;
+    max-width: 212px;
     font-size: 12px;
     line-height: 1.83;
     letter-spacing: 0.04em;
@@ -121,6 +130,11 @@
         font-size: 14px;
         line-height: 1.83;
         }
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.83;
+        max-width: 288px;
+    }
 }
 
 .contacts__working-week {
@@ -144,6 +158,13 @@
     font-size: 12px;
     line-height: 1.86;
     color: var(--color-secondary);
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.86;
+    }
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.86;}
 }
 
 .contacts__working-hours {
@@ -153,11 +174,18 @@
     font-size: 12px;
     line-height: 1.86;
     color: var(--color-copyright);
+    @include tablet {
+        font-size: 14px;
+    }
+    @include desktop {
+        font-size: 16px;
+    }
 }
 
 .contacts__item-connection {
     padding-top: 24px;
     padding-bottom: 24px;
+    max-width: 130px;
 }
 
 .contacts__item-tel {
@@ -165,22 +193,46 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.6;
-    color: var(--color-secondary)
+    color: var(--color-secondary);
+    @include tablet {
+            font-size: 14px;
+            line-height: 1.5;
+        }
+         @include desktop {
+             font-size: 16px;
+        }
 }
 
 .contacts__item-mail {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.60;
-    color: var(--color-secondary)
+    color: var(--color-secondary);
+    @include tablet {
+        font-size: 14px;
+        line-height: 1.5;
+        }
+    @include desktop {
+        font-size: 16px;
+    }
 }
+
+.contacts__item-tel:hover,
+.contacts__item-tel:focus,
+.contacts__item-mail:hover,
+.contacts__item-mail:focus {
+    color: var(--color-hover);
+}
+
 
 .contacts__buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
     padding-bottom: 60px;
+    gap: 16px;
 
     @include tablet {
     flex-direction: row;
