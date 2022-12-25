@@ -1,7 +1,7 @@
 // Hero wrapper----------------------------
-
-
-
+a {
+  text-decoration: none;
+}
 
 .hero {
   overflow: hidden;
@@ -57,7 +57,6 @@ details[open] > summary {
   color: transparent;
 }
 
-
 // Buttuns + anchor----------------------------
 
 .hero-items {
@@ -94,6 +93,28 @@ details[open] > summary {
     }
   }
 
+  &__about {
+    cursor: $cursor;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    text-decoration-line: underline;
+    color: var(--color-accent);
+    transition: background-color var(--transition-duration) var(--cubic-bezier);
+    @include desktop {
+      font-size: 14px;
+      line-height: calc(17 / 14);
+    }
+  }
+  
+  &__about:hover {
+    color: var(--color-hover);
+  }
+
+  &__about:focus {
+    color: var(--color-primary);
+  }
+
   &__product {
     z-index: 1;
     cursor: $cursor;
@@ -109,27 +130,10 @@ details[open] > summary {
 
   &__link {
     z-index: 1;
-    cursor: $cursor;
     margin-left: 12px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    text-decoration-line: underline;
-    color: var(--color-accent);
-    transition: background-color var(--transition-duration) var(--cubic-bezier);
-    @include desktop {
-      font-size: 14px;
-      line-height: calc(17 / 14);
-    }
   }
 
-  &__link:hover {
-    color: var(--color-hover);
-  }
 
-  &__link:focus {
-    color: var(--color-primary);
-  }
 }
 
 // Hero-images
@@ -223,7 +227,6 @@ details[open] > summary {
     bottom: 103px;
     width: 200px;
   }
-
 
   &__paragraph {
     font-size: 12px;
