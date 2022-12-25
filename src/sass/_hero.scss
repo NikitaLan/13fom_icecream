@@ -2,9 +2,21 @@
 summary {
   display: block;
 }
+
 summary::-webkit-details-marker {
   display: none;
 }
+
+summary::before {
+  content: url(../images/arrow-right-for-details.svg);
+  padding-right: 0.5em;
+}
+
+details[open] > summary {
+  color: transparent;
+}
+
+
 
 .hero {
   overflow: hidden;
@@ -22,6 +34,7 @@ summary::-webkit-details-marker {
 }
 
 .hero__title {
+  animation: animate__animated animate__bounceIn 5s;
   display: block;
   max-width: 247px;
   font-family: var(--secondary-font);
@@ -51,7 +64,7 @@ summary::-webkit-details-marker {
   &__list {
     display: flex;
     align-items: center;
-    margin-bottom: 236px;   
+    margin-bottom: 236px;
     @include tablet {
       margin-bottom: 176px;
     }
@@ -191,6 +204,7 @@ summary::-webkit-details-marker {
 // Descriptions --------------------
 
 .hero-description {
+  cursor: $cursor;
   display: none;
   position: absolute;
   @include tablet {
@@ -207,9 +221,6 @@ summary::-webkit-details-marker {
     width: 200px;
   }
 
-  &__item {
-    text-align: start;
-  }
 
   &__paragraph {
     font-size: 12px;
@@ -220,15 +231,6 @@ summary::-webkit-details-marker {
     @include desktop {
       margin-bottom: 24px;
     }
-  }
-
-  &__link {
-    width: 40px;
-    height: 16px;
-  }
-
-  &__icon {
-    fill: var(--color-primary);
   }
 }
 
