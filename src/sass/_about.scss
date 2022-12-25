@@ -227,9 +227,12 @@
    }
 }
 
-.about__button {
+.about__button {   
    margin-left: auto;
    margin-right: auto;
+   cursor: $cursor;
+   
+   
    @extend %button;
    @include tablet {
       margin-left: 0;

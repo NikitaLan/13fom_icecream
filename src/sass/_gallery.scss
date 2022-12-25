@@ -1,0 +1,25 @@
+.gallery {
+  background-image: linear-gradient(0deg, transparent 75%, #84a178 70%);
+  padding-bottom: 140px;
+}
+
+.gallery-box {
+  width: 100%;
+}
+
+.gallery-box__img {
+  min-width: 280px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 8px;
+
+  @include tablet {
+    min-width: 704px;
+    border-radius: 18px;
+  }
+
+  @include desktop {
+    max-width: 1013px;
+    border-radius: 24px;
+  }
+}
