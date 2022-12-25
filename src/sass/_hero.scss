@@ -1,5 +1,6 @@
 // Hero wrapper----------------------------
 .hero {
+    overflow: hidden;
     position: relative;
     max-width: $mobile;
     margin: auto;
@@ -123,8 +124,10 @@
 
     &_icecream {
         position: absolute;
+        animation: bear-animation 1s linear;
         bottom: 0;
-        left: 83px;
+        // left: 83px;
+        // left: -200px;
         @include tablet {
             left: 408px;
         }
@@ -132,6 +135,16 @@
             left: 652px;
         }
     }
+
+    @keyframes bear-animation {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(67px);
+        }
+    }
+    
 
     &_dots {
         position: absolute;
