@@ -1,6 +1,14 @@
 .gallery {
   background-image: linear-gradient(0deg, transparent 75%, #84a178 70%);
-  padding-bottom: 140px;
+  padding-bottom: 80px;
+
+  @include tablet {
+    padding-bottom: 100px;
+  }
+
+  @include desktop {
+    padding-bottom: 140px;
+  }
 }
 
 .gallery-box {
