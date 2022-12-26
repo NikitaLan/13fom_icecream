@@ -8,10 +8,20 @@
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
+  text-transform: uppercase;
   line-height: 1.22;
   display: block;
   text-align: center;
   color: #131313;
+
+  @include tablet {
+    font-size: 22px;
+    line-height: 1.23;
+  }
+
+  @include desktop {
+    font-size: 30px;
+  }
 }
 
 .title {
@@ -22,9 +32,18 @@
   font-size: 30px;
   line-height: 1.26;
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
+
+  @include tablet {
+    font-size: 34px;
+    line-height: 1.26;
+  }
+
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.26;
+  }
 }
 
 .products {
