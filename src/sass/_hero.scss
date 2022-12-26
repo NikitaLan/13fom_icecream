@@ -14,8 +14,6 @@
   }
 }
 
-
-
 .hero__title {
   display: block;
   max-width: 247px;
@@ -53,7 +51,6 @@ summary::before {
 
 details[open] > summary {
   color: transparent;
-
 }
 
 // Buttuns + anchor----------------------------
@@ -89,6 +86,8 @@ details[open] > summary {
     @include desktop {
       font-size: 14px;
       line-height: calc(18 / 14);
+      border-radius: 10px;
+      padding: 12px 34px;
     }
   }
 
@@ -105,7 +104,7 @@ details[open] > summary {
       line-height: calc(17 / 14);
     }
   }
-  
+
   &__about:hover {
     color: var(--color-hover);
   }
@@ -130,9 +129,13 @@ details[open] > summary {
   &__link {
     z-index: 1;
     margin-left: 12px;
+    @include tablet {
+      margin-left: 19px;
+    }
+    @include desktop {
+      margin-left: 34px;
+    }
   }
-
-
 }
 
 // Hero-images
