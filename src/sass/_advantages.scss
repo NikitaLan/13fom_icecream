@@ -4,7 +4,7 @@
   background-color: var(--color-bg);
 
   @include tablet {
-    padding-top: 60px;
+    padding-top: 99px;
     padding-bottom: 60px;
   }
 
@@ -56,16 +56,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  
 
   @include tablet {
     width: calc((100% - 160px) / 3);
-    gap: 16px;
   }
 
   @include desktop {
     width: calc((100% - 64px) / 3);
-    gap: 0;
+    
   }
 }
 .advantages-text__advantages-icon {
