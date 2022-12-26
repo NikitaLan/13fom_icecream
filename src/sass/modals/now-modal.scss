@@ -2,14 +2,45 @@
 .buynow {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+
+  @include tablet {
+    height: auto;
+  }
+
+  & .buynow-title {
+    padding-top: 28px;
+    padding-bottom: 83px;
+
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    @include tablet {
+      display: none;
+    }
+  }
 
   & .buynow-list {
     display: flex;
-    gap: 32px;
+    flex-direction: column;
+    gap: 82px;
+
     margin: 0 auto;
-    padding-top: 100px;
-    padding-left: 54px;
-    padding-right: 54px;
+    margin-bottom: 32px;
+    padding-left: 74px;
+    padding-right: 74px;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 32px;
+      padding-top: 163px;
+      padding-left: 54px;
+      padding-right: 54px;
+      margin-bottom: 40px;
+    }
   }
 
   & .buynow-item {
@@ -18,8 +49,6 @@
     display: flex;
     flex-direction: column;
     justify-content: end;
-
-    margin-bottom: 40px;
 
     width: 132px;
     height: 135px;
@@ -134,5 +163,26 @@
     text-transform: uppercase;
 
     color: var(--color-secondary);
+  }
+
+  & .buynow-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 29px;
+    padding-left: 28px;
+    padding-right: 28px;
+
+    @include tablet {
+      padding-bottom: 32px;
+    }
+
+    & .form__textarea {
+      margin-bottom: 26px;
+
+      @include tablet {
+        margin-bottom: 32px;
+      }
+    }
   }
 }
