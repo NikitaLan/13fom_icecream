@@ -37,7 +37,7 @@ body {
   background-position: center; 
   background-repeat: repeat;
   background-attachment: fixed;
-  background-position: 50%;
+  // background-position: 50%;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -45,7 +45,7 @@ body {
     background-image: url(../images/products/bg-mobile@2x.jpg);
   }
 
-  @media screen and (min-width: 481px) {
+  @include tablet {
     background-image: url(../images/products/bg-tablet.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -55,7 +55,7 @@ body {
     }
   }
 
-  @media screen and (min-width: 769px) {
+  @include desktop {
     background-image: url(../images/products/bg-desc.jpg);
 
     @media (min-device-pixel-ratio: 2),
