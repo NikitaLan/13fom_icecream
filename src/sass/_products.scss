@@ -230,7 +230,6 @@
   align-items: center;
   position: relative;
   background-color: #efd478;
-  margin-top: 160px;
 
   @media screen and (max-width: 767px) {
     width: 280px;
@@ -318,7 +317,6 @@
 .milkshake {
   align-items: center;
   background-color: #d6936d;
-  margin-top: 160px;
   position: relative;
 
   @media screen and (max-width: 767px) {
@@ -411,14 +409,10 @@
   cursor: $cursor;
   position: absolute;
   bottom: 16px;
-  left: 115px;
-
-  @media screen and (min-width: 768px) {
-    left: 90px;
-  }
+  left: 50%;
+  transform: translate(-50%);
 
   @media screen and (min-width: 1200px) {
-    left: 160px;
     bottom: 60px;
   }
 }
