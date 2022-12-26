@@ -149,7 +149,7 @@
 
 .contacts__working-week {
     max-width: 216px;
-     @include tablet {
+    @include tablet {
         max-width: 176px;
     }
     @include tablet {
@@ -180,7 +180,7 @@
         content: '';
         display: inline-block;
         margin-top: 24px;
-         width: 216px;
+        width: 216px;
         height: 1px;
         background-color: #E1E1E1;
     
@@ -189,7 +189,7 @@
     }
     
     @include desktop {
-         width: 288px;
+        width: 288px;
     }
     }
 }
@@ -311,7 +311,7 @@
         background-color: var(--color-hover);
     }
     &:focus {
-         background-color: var(--color-hover);
+        background-color: var(--color-hover);
         color: #ffffff;
     }
 }
