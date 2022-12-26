@@ -9,6 +9,8 @@
   background-color: var(--color-primary);
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  height: 100vh;
+  overflow: auto;
   @media screen and (min-width: 648px) {
     width: 568px;
     padding: 32px 40px;
