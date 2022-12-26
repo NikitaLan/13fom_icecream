@@ -1,70 +1,16 @@
-.slider {
-    min-width: 0;
-    position: relative;
-    padding: 0px 50px;
-    height: 600px;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(../images/customer/bg/desktop.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    @media screen and (max-width: 767px) {
-      background-image: url(../images/customer/bg/mobile.jpg);
-      width: 320px;
-      height: 1037px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      background-image: url(../images/customer/bg/tablet.jpg);
-      width: 768px;
-      height: 1017px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      background-image: url(../images/customer/bg/desktop.jpg);
-      width: 1330px;
-      height: 1053px;
-    }
-  }
-  
-  @media screen and (max-width: 767px) {
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero {
-        background-image: url(../images/customer/bg/mobile@2x.jpg);
-      }
-    }
-  }
-  
-  @media screen and (min-width: 768px) {
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero {
-        background-image: url(../images/customer/bg/tablet@2x.jpg);
-      }
-    }
-  }
-  
-  @media screen and (min-width: 1200px) {
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      .hero {
-        background-image: url(../images/customer/bg/desktop@2x.jpg);
-      }
-    }
-  }
+
 
 .slide {
+  padding-top: 80px;
     padding-bottom: 40px;
+
     @include tablet {
+      padding-top: 100px;
         padding-bottom: 80px;
     }
     @include desktop {
+      padding-top: 140px;
+
         padding-bottom: 100px;
     }
 }

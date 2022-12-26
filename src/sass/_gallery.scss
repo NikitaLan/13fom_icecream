@@ -1,33 +1,71 @@
 .gallery {
-  background-image: linear-gradient(0deg, transparent 75%, #84a178 70%);
-  padding-bottom: 80px;
+  position: relative;
+  
+  background-image: linear-gradient(0deg, transparent  80%,  #84a178 75%);
+  min-height: 130px;
+  
 
   @include tablet {
-    padding-bottom: 100px;
+    min-height: 327px;
   }
-
   @include desktop {
-    padding-bottom: 140px;
+    min-height: 422px;
   }
 }
 
-.gallery-box {
-  width: 100%;
-}
-
-.gallery-box__img {
-  min-width: 280px;
-  width: 100%;
-  margin: 0 auto;
+.image-list__card {
+  position: absolute;
+  max-width: 280px;
   border-radius: 8px;
+  left: 50%;
+  top: 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: myGallery 6s infinite;
+  -moz-animation: myGallery 6s infinite;
+  -o-animation: myGallery 6s infinite;
+  animation: myGallery 6s infinite;
 
   @include tablet {
-    min-width: 704px;
+    max-width: 704px;
     border-radius: 18px;
   }
-
   @include desktop {
     max-width: 1013px;
     border-radius: 24px;
+  }
+
+  &--first {
+    animation-delay: 4s;
+  }
+  
+  &--second {
+    animation-delay: 2s;
+  }
+  
+  &--third {
+    animation-delay: 0s;
+  }
+
+}
+
+@keyframes myGallery {
+  0% {
+    opacity:1;
+  }
+  25% {
+    opacity:1;
+  }
+  50% {
+    opacity:0;
+  }
+  75% {
+    opacity:0;
   }
 }

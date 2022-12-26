@@ -1,35 +1,100 @@
-<section class="gallery section" id="gallery">
-  <div class="container gallery_container">
-    <h2 class="visually-hidden">Gallery</h2>
-    <div class="gallery-box">
-      <picture>
-        <source
-          srcset="
-            ./images/gallery/img1-desk@1x.jpg 1x,
-            ./images/gallery/img1-desk@2x.jpg 2x
-          "
-          media="(min-width: 1200px)"
-        />
-        <source
-          srcset="
-            ./images/gallery/img1-tab@1x.jpg 1x,
-            ./images/gallery/img1-tab@2x.jpg 2x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
+<section id="gallery" class="gallery">
+  <div class="container gallery-container">
+    <h2 class="visually-hidden">Галерея</h2>
+    <ul class="image-list list">
+      <li class="image-list__item">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery/img1-desk@1x.jpg 1x,
+              ./images/gallery/img1-desk@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/img1-tab@1x.jpg 1x,
+              ./images/gallery/img1-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
             ./images/gallery/img1-mob@1x.jpg 1x,
             ./images/gallery/img1-mob@2x.jpg 2x
-          "
-          media="(min-width: 480px)"
-        />
-        <img
-          class="gallery-box__img"
-          src="./images/gallery/img1-desk@1x.jpg"
-          width="450"
-        />
-      </picture>
-    </div>
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/gallery/img1-desk@1x.jpg"
+            class="image-list__card image-list__card--first"
+            width="1013"
+            alt="Icecream 1"
+          />
+        </picture>
+      </li>
+      <li class="image-list__item">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery/img2-desk@1x.jpg 1x,
+              ./images/gallery/img2-desk@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+            ./images/gallery/img2-tab@1x.jpg 1x,
+            ./images/gallery/img2-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+            ./images/gallery/img2-mob@1x.jpg 1x,
+            ./images/gallery/img2-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/gallery/img2-desk@1x.jpg"
+            class="image-list__card image-list__card--second"
+            width="1013"
+            alt="Icecream 2"
+          />
+        </picture>
+      </li>
+      <li class="image-list__item">
+        <picture>
+          <source
+            srcset="
+              ./images/gallery/img3-desk@1x.jpg 1x,
+              ./images/gallery/img3-desk@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+            ./images/gallery/img3-tab@1x.jpg 1x,
+            ./images/gallery/img3-tab@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+            ./images/gallery/img3-mob@1x.jpg 1x,
+            ./images/gallery/img3-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./images/gallery/img3-desk@1x.jpg"
+            class="image-list__card image-list__card--third"
+            width="1013"
+            alt="Icecream 3"
+          />
+        </picture>
+      </li>
+    </ul>
   </div>
 </section>
