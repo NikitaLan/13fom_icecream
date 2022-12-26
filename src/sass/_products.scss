@@ -63,11 +63,13 @@
     display: flex;
     gap: 16px;
     flex-wrap: nowrap;
+    margin-top: 200px;
   }
 
   @media screen and (min-width: 1200px) {
     gap: 29px;
     flex-wrap: nowrap;
+    margin-top: 303px;
   }
 }
 
@@ -171,7 +173,7 @@
 
   @media screen and (min-width: 1200px) {
     height: 536px;
-    margin-top: 260px;
+    // margin-top: 260px;
   }
 }
 
@@ -186,10 +188,6 @@
   @media screen and (max-width: 767px) {
     // margin-top: -80px;
     
-  }
-
-  @include tablet {
-    padding-top: 123px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -260,7 +258,7 @@
 
   @media screen and (min-width: 1200px) {
     height: 536px;
-    margin-top: 260px;
+    // margin-top: 260px;
   }
 }
 
@@ -348,7 +346,7 @@
 
   @media screen and (min-width: 1200px) {
     height: 536px;
-    margin-top: 260px;
+    // margin-top: 260px;
   }
 }
 
@@ -441,6 +439,14 @@
   align-items: center;
 
   @media screen and (max-width: 767px) {
-    padding-top: 100px;
+    padding-top: 123px;
+  }
+
+  @include tablet {
+    padding-top: 108px;
+  }
+
+  @include desktop {
+    padding-top: 165px;
   }
 }
