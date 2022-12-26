@@ -1,0 +1,214 @@
+.modal {
+    position: absolute;
+    padding: 28px 28px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+   
+    @media screen and (min-width:768px) {
+        padding: 32px 60px;
+    }
+}
+
+.modal-franch {
+    position: fixed;
+    opacity: 1;
+   
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    border: 2px solid #F8D24E;
+    z-index: 101;
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// .modal-franch .is-hidden {
+//     //     visibility: hidden;
+//     //     opacity: 0;
+//     //     pointer-events: none;
+//     // }
+
+.modal-loc__btn-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: flex;
+    right: 12px;
+    top: 12px;
+    border: none;
+    background-color: transparent;
+
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width:768px) {
+        width: 24px;
+        height: 24px;
+        right: 17px;
+        top: 17px;
+    }
+        
+}
+.modal-loc__cont {
+    fill: #131313;
+
+    &:hover,
+    &:focus {
+        fill: #0A8817;
+    }
+}
+.modal-franch__title {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 250px;
+
+    font-family: 'Seymour One', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #131313;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
+        font-size: 20px;
+        line-height: 1.4;
+        max-width: 322px;
+    }
+}
+.modal-franch__text {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 100%;
+    max-width: 222px;
+
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #131313;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 32px;
+        font-size: 16px;
+        line-height: 1.4;
+        max-width: 448px;
+    }
+}
+    .form-franch {
+       margin: 0 auto;
+       width: 100%;
+}
+.form-franch__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    @media screen and (min-width:768px) {
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+}
+.form-franch__label{
+    width: 100%;
+    max-width: 224px;
+@media screen and (min-width:768px) {
+        max-width: 368px;
+    }
+}
+.form-franch__input {
+    width: 100%;
+    
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    height: 32px;
+    @media screen and (min-width:768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+        height: 42px;
+    }
+        &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #131313;
+        }
+}
+
+.form-franch__textarea {
+    width: 100%;
+    max-width: 224px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84A178;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    padding-top: 8px;
+    resize: none;
+    &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #131313;
+        }
+        @media screen and (min-width:768px) {
+            padding-left: 16px;
+            padding-right: 16px;
+            max-width: 368px;
+        }
+}
+.form-franch__submit {
+    padding: 12px 34px;
+    margin: 0 aoto;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #131313;
+    background-color: #F8D24E;
+    border-radius: 10px;
+    border: none;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+         &:hover {
+             background-color: #0A8817;
+         }
+    
+         &:focus {
+             background-color: #0A8817;
+             color: #FCFCFC;
+         }
+   
+}
