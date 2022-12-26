@@ -14,8 +14,6 @@
         padding-bottom: 100px;
     }
 }
-
-
   
   /* Ограничивающая оболочка */
   .slick-list {
@@ -106,27 +104,26 @@
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: 480px) {
-      padding: 35px 39px;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 2.58;
-      letter-spacing: 0.04em;
-    }
-    @media screen and (min-width: 768px) {
+    padding: 35px 39px;
+    line-height: calc(30.6 / 12);
+
+    font-weight: 400;
+    font-size: 12px;
+  
+    @include tablet {
       padding: 43px 109px;
       font-weight: 500;
       font-size: 14px;
-      line-height: 1.857;
-      letter-spacing: 0.04em;
+      line-height:  calc(26.04 / 14);
+
+      
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
+      
       width: 938px;
-  
       font-weight: 500;
       font-size: 16px;
-      line-height: 1.875;
-      letter-spacing: 0.04em;
+      line-height: calc(29.76 / 16);
     }
   }
   
@@ -137,18 +134,14 @@
   
     color: #131313;
     margin-bottom: 32px;
+    font-size: 20px;
+    line-height: calc(37.2 / 20);
   
-    @media screen and (max-width: 767px) {
+    @include tablet {
       margin-bottom: 12px;
       font-weight: 500;
-      font-size: 20px;
-      line-height: 1.85;
-    }
-  
-    @media screen and (min-width: 768px) {
-      font-weight: 500;
       font-size: 16px;
-      line-height: 1.875;
+      line-height: calc(29.76 / 16);
+      
     }
   }
-  
