@@ -63,7 +63,11 @@
           <li class="mobile-item"><a class="link" href="">Contact</a></li>
           <li class="mobile-item">
             <a class="link" href="">
-              <button class="mobile-btn" type="button">
+              <button
+                class="mobile-btn js-open-modal"
+                type="button"
+                data-modal="1"
+              >
                 Buy now
                 <svg class="arrow-right-icon" width="12" height="12">
                   <use href="./images/svg-sprite.svg#arrow-right-icon"></use>
@@ -83,7 +87,8 @@
       </ul>
     </nav>
 
-    <button class="desktop-btn" type="button">
+    <!-- add class="js-open-modal" & atribut data-modal="1" -->
+    <button class="desktop-btn js-open-modal" type="button" data-modal="1">
       Buy now
       <svg class="arrow-right-icon" width="12" height="12">
         <use href="./images/svg-sprite.svg#arrow-right-icon"></use>
