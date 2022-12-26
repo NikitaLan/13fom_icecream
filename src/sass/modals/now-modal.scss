@@ -1,1 +1,123 @@
 // Модальное окно - Buy now modal - Kostiantyn Koshyk
+// Модальное окно - Buy now modal - Kostiantyn Koshyk
+.buynow {
+  display: flex;
+  flex-direction: column;
+
+  & .buynow-list {
+    display: flex;
+    gap: 32px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-left: 54px;
+    padding-right: 54px;
+  }
+
+  & .buynow-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    margin-bottom: 40px;
+
+    width: 132px;
+    height: 135px;
+
+    border: 2px solid #96af8c;
+    border-top-width: 0;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    // border-radius: 15px;
+    box-shadow: (0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+
+    &::before {
+      content: '';
+      display: block;
+      width: 132px;
+      height: 132px;
+      border-radius: 50%;
+
+      background: linear-gradient(
+          0deg,
+          rgba(156, 190, 143, 0.7),
+          rgba(156, 190, 143, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+
+      position: absolute;
+      top: -45%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: 50%;
+      display: block;
+      width: 132px;
+      height: 132px;
+
+      border-radius: 50%;
+
+      background-size: contain;
+      transform: translate(-50%);
+
+      background-image: url('../images/modals/modals/buy-now/buy-now1.png');
+    }
+
+    &:nth-child(2) {
+      background-color: #efd478;
+      border-style: none;
+    }
+    &:nth-child(2)::before {
+      background: linear-gradient(
+          0deg,
+          rgba(248, 210, 78, 0.7),
+          rgba(248, 210, 78, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.34219px 20.0332px rgba(153, 114, 23, 0.25);
+    }
+
+    &:nth-child(2)::after {
+      background-image: url('../images/modals/modals/buy-now/buy-now2.png');
+    }
+
+    &:nth-child(3) {
+      // background-color: #efd478;
+      border-color: #d6936d;
+    }
+    
+    &:nth-child(3)::before {
+      background: linear-gradient(
+          0deg,
+          rgba(213, 117, 63, 0.7),
+          rgba(213, 117, 63, 0.7)
+        ),
+        #d9d9d9;
+      box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
+    }
+
+    &:nth-child(3)::after {
+      background-image: url('../images/modals/modals/buy-now/buy-now3.png');
+    }
+  }
+
+  & .item-title {
+    margin-bottom: 20px;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--color-secondary);
+  }
+}
