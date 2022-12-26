@@ -48,7 +48,6 @@
   @include desktop {
     max-width: 1173px;
     gap: 37px;
-
   }
 }
 
@@ -69,20 +68,68 @@
     gap: 0;
   }
 }
-
 .advantages-text__advantages-icon {
+  position: relative;
   height: 50px;
-  text-align: center;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 16px;
+  background-color: var(--color-accent);
+  border-radius: 25px;
 
-  @include tablet {
+   
+ &::after{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        height: 36px;
+        width: 36px;
+        top:7px;
+        left:7px;
+        content: '';
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: translate(-50%, -50%);
+        
+    }
+    &--cow::before{
+        background-image: url(../images/advantages/advantages-cow.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/advantages-cow-2x.png);
+        }
+    }
+
+    &--weight::after {
+        background-image: url(../images/advantages/advantages-weight.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/advantages-weight-2x.png);
+        }
+    }
+
+    &--ice-creama::after {
+        background-image: url(../images/advantages/advantages-ice-crema.png);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/advantages-ice-crema-2x.png);
+        }
+    }
+    @include tablet {
     margin-bottom: 32px;
   }
-
   @include desktop {
     margin-bottom: 40px;
   }
-}
+  }
 
 .advantages__advantages-title {
   font-style: normal;
@@ -106,8 +153,8 @@
     line-height: calc(71 / 58);
     margin-bottom: 12px;
   }
-}
 
+}
 .advantages__advantages-subtitle {
   max-width: 230px;
   font-weight: 700;
