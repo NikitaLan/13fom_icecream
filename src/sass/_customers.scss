@@ -1,0 +1,153 @@
+<<<<<<< Updated upstream
+=======
+
+
+.slide {
+  padding-top: 80px;
+    padding-bottom: 40px;
+
+    @include tablet {
+      padding-top: 100px;
+        padding-bottom: 80px;
+    }
+    @include desktop {
+      padding-top: 140px;
+
+        padding-bottom: 100px;
+    }
+}
+
+
+  
+  /* Ограничивающая оболочка */
+  .slick-list {
+    overflow: hidden;
+  }
+  /* Лента слайдов */
+  .slick-track {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  /* Стрелка */
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  /* Стрелка влево */
+  .slick-arrow.slick-prev {
+    left: 0;
+  }
+  /* Стрелка вправо */
+  .slick-arrow.slick-next {
+    right: 0;
+  }
+  
+  /* Точки (булиты) */
+  .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-dots li {
+    list-style: none;
+    margin-right: 10px;
+  }
+  .slick-dots li:nth-child(3n) {
+    margin-right: 0;
+  }
+  /* Активная точка */
+  .slick-dots li.slick-active button {
+    background-color: #84a178;
+    //   border: 1px solid #fff;
+  }
+  
+  /* Элемент точки */
+  .slick-dots li button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    border-color: transparent;
+  }
+  
+  .slider_item {
+    text-align: center;
+    padding: 0px 15px;
+    // @media screen and (min-width: 480px) {
+    //   margin-top: 178px;
+    // }
+    // @media screen and (min-width: 768px) {
+    //   margin-top: 283px;
+    // }
+    // @media screen and (min-width: 1200px) {
+    //   margin-top: 464px;
+    // }
+  }
+
+
+  .slider_img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
+    border-radius: 50%;
+  }
+  .slider_text {
+    background: #84a178;
+    border-radius: 10px;
+    font-family: "Montserrat";
+    font-style: normal;
+    text-align: center;
+    justify-content: center;
+    color: #fcfcfc;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 39px;
+    line-height: calc(30.6 / 12);
+
+    font-weight: 400;
+    font-size: 12px;
+  
+    @include tablet {
+      padding: 43px 109px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height:  calc(26.04 / 14);
+
+      
+    }
+    @include desktop {
+      
+      width: 938px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: calc(29.76 / 16);
+    }
+  }
+  
+  .slider_title {
+    font-style: normal;
+  
+    text-align: center;
+  
+    color: #131313;
+    margin-bottom: 32px;
+    font-size: 20px;
+    line-height: calc(37.2 / 20);
+  
+    @include tablet {
+      margin-bottom: 12px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: calc(29.76 / 16);
+      
+    }
+  }
+  
+>>>>>>> Stashed changes
