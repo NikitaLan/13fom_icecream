@@ -22,28 +22,20 @@
 // }
 
 
-// .container {
-//   margin: 0 auto;
-//   padding: 0 20px;
-//   @include mobile {
-//       max-width: 480px;
-//   }
-
-//   @include tablet {
-//       width: 768px;
-//       padding: 0px 32px;
-//   }
-
-//   @include desktop {
-//       width: 1200px;
-//       padding: 0px 16px;
-//   }
-// }
-
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  // background-image: url(../images/products/bg-mobile.jpg);
+
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../images/products/bg-mobile@2x.jpg);
+  // }
+
 
   @include mobile {
     max-width: 480px;
@@ -51,9 +43,11 @@
 
   @include tablet {
     max-width: 768px;
+    padding: 0px 32px;
   }
 
   @include desktop {
     max-width: 1200px;
+    padding: 0px 16px;
   }
 }

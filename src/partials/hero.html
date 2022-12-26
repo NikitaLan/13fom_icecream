@@ -1,0 +1,143 @@
+<section class="hero">
+  <div class="container">
+    <h1 class="hero__title animate__animated animate__bounceIn">
+      ice cream made with passion
+    </h1>
+    <div class="hero-items">
+      <ul class="hero-items__list">
+        <li class="hero-items__product">
+          <a href="#products"><button type="button" class="hero-items__button">Products</button></a>
+        </li>
+        <li class="hero-items__link"><a class=hero-items__about href="#about">How it’s made?</a></li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <ul class="hero-img">
+      <li class="hero-img__dots">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/mobile/dots-header.png    1x,
+              ./images/hero/mobile/dots-header@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            width="320"
+            height="50"
+          />
+          <source
+            srcset="
+              ./images/hero/tablet/dots-header.png    1x,
+              ./images/hero/tablet/dots-header@2x.png 2x
+            "
+            media="(max-width: 1199px)"
+            width="768"
+            height="68"
+          />
+          <source
+            srcset="
+              ./images/hero/desktop/dots-header.png    1x,
+              ./images/hero/desktop/dots-header@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="img"
+            src="./images/hero/desktop/dots-header.png"
+            alt="Hero dots"
+            width="1200"
+            height="383"
+          />
+        </picture>
+      </li>
+      <li class="hero-img__icecream">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/mobile/icecream.png    1x,
+              ./images/hero/mobile/icecream@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            width="177"
+            height="217"
+          />
+          <source
+            srcset="
+              ./images/hero/tablet/icecream.png    1x,
+              ./images/hero/tablet/icecream@2x.png 2x
+            "
+            media="(max-width: 1199px)"
+            width="268"
+            height="329"
+          />
+          <source
+            srcset="
+              ./images/hero/desktop/icecream.png    1x,
+              ./images/hero/desktop/icecream@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="img"
+            src="./images/hero/desktop/icecream.png"
+            alt="Hero ice-cream"
+            width="456"
+            height="560"
+          />
+        </picture>
+      </li>
+      <li class="hero-img__varieties">
+        <picture>
+          <source
+            srcset="
+              ./images/hero/tablet/varieties.png    1x,
+              ./images/hero/tablet/varieties@2x.png 2x
+            "
+            media="(max-width: 1199px)"
+            width="152"
+            height="152"
+          />
+          <source
+            srcset="
+              ./images/hero/desktop/varieties.png    1x,
+              ./images/hero/desktop/varieties@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            class="img"
+            src="./images/hero/desktop/varieties.png"
+            alt="Hero dots"
+            width="225"
+            height="225"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+  <div class="hero-description">
+    <details class="">
+      <summary class="hero-details"></summary>
+      <p class="hero-description__paragraph">
+        Ice cream to any taste. Ice cream is made from a selected milk mixture
+        and served in a crispy cup
+      </p>
+    </details>
+  </div>
+  <div>
+    <ul class="hero-count">
+      <li class="hero-count__items">
+        <p class="hero-count__paragraph">16</p>
+      </li>
+      <li class="hero-count__items">
+        <span class="hero-count__categories">cafes</span>
+      </li>
+      <li class="hero-count__items">
+        <p class="hero-count__paragraph">23</p>
+      </li>
+      <li class="hero-count__items">
+        <span class="hero-count__categories">food trucks</span>
+      </li>
+    </ul>
+  </div>
+</section>
