@@ -2,24 +2,19 @@
 // CONTACTS
 
 .contacts {
-    max-width: 480px;
     padding-top: 40px;
     padding-bottom: 60px;
     margin: 0 auto;
     background-image: linear-gradient(to bottom, transparent 27%, #84a178 27%);
 
-    @include mobile {
-        max-width: 480px;
-    }
+    
 
     @include tablet {
-        max-width: 768px;
-        padding-top: 80px;
+            padding-top: 80px;
         padding-bottom: 40px;
         background-image: linear-gradient(to bottom, transparent 48%, #84a178 48%);
     }
     @include desktop {
-        max-width: 1200px;
         padding-top: 0px;
         padding-bottom: 120px;
         background-image: linear-gradient(to bottom, transparent 17%, #84a178 17%);

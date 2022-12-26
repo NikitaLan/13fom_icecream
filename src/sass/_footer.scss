@@ -1,15 +1,7 @@
 .footer {
   background-color: var(--color-bg);
-  max-width: $mobile;
   margin: auto;
 
-  @include tablet {
-    min-width: $tablet;
-  }
-
-  @include desktop {
-    min-width: $desktop;
-  }
 }
 
 .footer-top {
