@@ -1,8 +1,4 @@
 // Hero wrapper----------------------------
-a {
-  text-decoration: none;
-}
-
 .hero {
   overflow: hidden;
   position: relative;
@@ -55,6 +51,7 @@ summary::before {
 
 details[open] > summary {
   color: transparent;
+
 }
 
 // Buttuns + anchor----------------------------

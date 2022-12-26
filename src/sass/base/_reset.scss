@@ -32,54 +32,36 @@ body {
   letter-spacing: 0.04em;
   margin: 0 auto;
   
-  background-image: url(../images/customer/bg/desktop.jpg);
+  background-image: url(../images/products/bg-mobile.jpg);
   // background-size: cover;
   background-position: center; 
   background-repeat: repeat;
   background-attachment: fixed;
   background-position: 50%;
 
-//   @media screen and (max-width: 767px) {
-//     background-image: url(../images/customer/bg/mobile.jpg);
-    
-//   }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/products/bg-mobile@2x.jpg);
+  }
 
-//   @media screen and (min-width: 768px) {
-//     background-image: url(../images/customer/bg/tablet.jpg);
-    
-//   }
+  @media screen and (min-width: 481px) {
+    background-image: url(../images/products/bg-tablet.jpg);
 
-//   @media screen and (min-width: 1200px) {
-//     background-image: url(../images/customer/bg/desktop.jpg);
-//   }
-// }
-
-// @media screen and (max-width: 767px) {
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     .hero {
-//       background-image: url(../images/customer/bg/mobile@2x.jpg);
-//     }
-//   }
-}
-
-@media screen and (min-width: 768px) {
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero {
-      background-image: url(../images/customer/bg/tablet@2x.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/bg-tablet@2x.jpg);
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    .hero {
-      background-image: url(../images/customer/bg/desktop@2x.jpg);
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/products/bg-desc.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/products/bg-desc@2x.jpg);
     }
   }
 
