@@ -1,5 +1,4 @@
 // Модальное окно - Buy now modal - Kostiantyn Koshyk
-// Модальное окно - Buy now modal - Kostiantyn Koshyk
 .buynow {
   display: flex;
   flex-direction: column;
@@ -69,6 +68,12 @@
       transform: translate(-50%);
 
       background-image: url('../images/modals/modals/buy-now/buy-now1.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/modals/modals/buy-now/buy-now1@2x.png');
+      }
     }
 
     &:nth-child(2) {
@@ -87,13 +92,18 @@
 
     &:nth-child(2)::after {
       background-image: url('../images/modals/modals/buy-now/buy-now2.png');
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/modals/modals/buy-now/buy-now2@2x.png');
+      }
     }
 
     &:nth-child(3) {
       // background-color: #efd478;
       border-color: #d6936d;
     }
-    
+
     &:nth-child(3)::before {
       background: linear-gradient(
           0deg,
@@ -106,6 +116,11 @@
 
     &:nth-child(3)::after {
       background-image: url('../images/modals/modals/buy-now/buy-now3.png');
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('../images/modals/modals/buy-now/buy-now3@2x.png');
+      }
     }
   }
 
