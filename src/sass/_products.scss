@@ -84,7 +84,6 @@
 .products__list {
   text-align: center;
   border-radius: 24px;
-  
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 48px) / 3);
@@ -95,33 +94,33 @@
   }
 }
 
-.products__list:hover::before, .products__list:focus::before {
-  transform: scale(1.2);
-  left: 40px;
+// .products__list:hover::before, .products__list:focus::before {
+//   transform: scale(1.2);
+//   left: 40px;
 
-  @include tablet {
-    transform: scale(1.1);
-    left: 9px;
-  }
-  @include desktop {
-    transform: scale(1.2);
-    left: 25px;
-  }
-}
+//   @include tablet {
+//     transform: scale(1.1);
+//     left: 9px;
+//   }
+//   @include desktop {
+//     transform: scale(1.2);
+//     left: 25px;
+//   }
+// }
 
-.products__list:hover::after, .products__list:focus::after {
-  transform: scale(1.2);
-  left: 40px;
+// .products__list:hover::after, .products__list:focus::after {
+//   transform: scale(1.2);
+//   left: 40px;
 
-  @include tablet {
-    transform: scale(1.2);
-    left: 9px;
-  }
-  @include desktop {
-    transform: scale(1.2);
-    left: 25px;
-  }
-}
+//   @include tablet {
+//     transform: scale(1.2);
+//     left: 9px;
+//   }
+//   @include desktop {
+//     transform: scale(1.2);
+//     left: 25px;
+//   }
+// }
 
 .cream::before {
   content: '';
