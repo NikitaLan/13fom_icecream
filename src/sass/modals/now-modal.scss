@@ -5,8 +5,8 @@
   height: 100vh;
   overflow: auto;
 
-  // top: 0;
-  // transform: translate(-50%);
+  top: 0;
+  transform: translate(-50%);
 
   @include tablet {
     height: auto;
