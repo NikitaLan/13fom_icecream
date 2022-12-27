@@ -1,0 +1,60 @@
+<!-- Модальное окно - franchise modal - Kostiantyn Koshyk -->
+<section class="container">
+  <!-- Modal franchise -->
+  <div class="modal franchise" data-modal="4">
+    <!--   Кнопка закрытия окна - НЕ МЕНЯТЬ!!! -->
+    <button class="modal-btn-close js-modal-close" type="button">
+      <svg width="20" height="20">
+        <use href="./images/svg-sprite.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+
+    <div class="franchise-wrap">
+      <h2 class="franchise-title">
+        Thank you for your interest in owning an Ice Cream shop
+      </h2>
+
+      <p class="franchise-text">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+    </div>
+
+    <form class="franchise-form">
+      <input
+        type="text"
+        name="user-name"
+        class="form__input"
+        placeholder="Name"
+        required
+      />
+      <input
+        type="tel"
+        name="user-tel"
+        class="form__input"
+        placeholder="Phone"
+        required
+      />
+      <input
+        type="email"
+        name="user-mail"
+        class="form__input"
+        placeholder="e-mail"
+        required
+      />
+      <textarea
+        name="user-comment"
+        class="form__textarea"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="modal__button">Submit</button>
+    </form>
+  </div>
+
+  <!-- Оставить в паршиле now-modal.html -->
+  <!-- Подложка под модальным окном должна быть внизу!!! -->
+  <div class="overlay js-overlay-modal"></div>
+</section>
