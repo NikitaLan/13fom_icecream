@@ -61,7 +61,6 @@
 }
 
 .about__bg-img {
-   // margin-bottom: 62px;
    margin-left: auto;
    margin-right: auto;
    position: relative;
@@ -80,6 +79,10 @@
          transform: scale(1.1);
          background-color: var(--color-hover);
       }
+
+   @media screen and (max-width: 767px) {
+      margin-bottom: 62px;
+   }
 
    @include tablet {
       width: 330px;

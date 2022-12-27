@@ -2,15 +2,15 @@
 // CONTACTS
 
 .contacts {
-    padding-top: 40px;
+    // padding-top: 40px;
     padding-bottom: 60px;
     margin: 0 auto;
-    background-image: linear-gradient(to bottom, transparent 27%, #84a178 27%);
+    background-image: linear-gradient(to bottom, transparent 23%, #84a178 23%);
 
     
 
     @include tablet {
-            padding-top: 80px;
+            // padding-top: 80px;
         padding-bottom: 40px;
         background-image: linear-gradient(to bottom, transparent 48%, #84a178 48%);
     }
@@ -47,13 +47,15 @@
 
 .contacts__item {
     max-width: 280px;
-    padding-left: 32px;
-    padding-right: 32px;
+    // padding-left: 32px;
+    // padding-right: 32px;
+    padding: 40px 32px 24px;
     background: var(--color-primary);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 
     @include tablet {
+        padding: 40px 24px;
         max-width: 768px;
         padding-left: 24px;
         padding-right: 24px;
@@ -71,7 +73,7 @@
     display: inline-block;
     border-radius: 4px;
     padding: 4 22px;
-    margin-top: 40px;
+    // margin-top: 40px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.2;
@@ -92,11 +94,14 @@
 }
 
 .contacts__address {
-    padding-top: 20px;
+    margin-top: 20px;
     margin-bottom: 24px;
     max-width: 216px;
+
     @include tablet {
         max-width: 176px;
+        margin-top: 32px;
+    margin-bottom: 32px;
     }
     @include desktop {
         max-width: 288px;
@@ -104,6 +109,7 @@
 }
 
 .contacts__address-city {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -160,13 +166,14 @@
 .contacts__working-time::before {
     content: '';
     display: inline-block;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     width: 216px;
     height: 1px;
     background-color: #E1E1E1;
 
     @include tablet {
         width: 176px;
+        margin-bottom: 30px;
     }
 
     @include desktop {
@@ -175,7 +182,7 @@
 }
 
 .contacts__working-time-weekend {
-    padding-top: 8px;
+    margin-top: 8px;
     &::after {
         content: '';
         display: inline-block;
@@ -186,6 +193,7 @@
     
     @include tablet {
         width: 176px;
+        margin-top: 32px;
     }
     
     @include desktop {
@@ -226,8 +234,7 @@
 }
 
 .contacts__item-connection {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    margin-top: 20px;
     max-width: 130px;
 
     @include tablet {
@@ -239,7 +246,8 @@
 }
 
 .contacts__item-tel {
-    padding-bottom: 6px;
+    display: block;
+    margin-bottom: 6px;
     font-weight: 500;
     font-size: 12px;
     line-height: 1.6;
@@ -282,15 +290,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    margin-top: 20px;
     gap: 16px;
 
     @include tablet {
     flex-direction: row;
     gap: 16px;
     padding-top: 40px;
-    pdding-bottom: 40px;
+    // padding-bottom: 40px;
+    margin-top: 0;
+    }
+    @include desktop {
+        margin-top: 60px;
+        padding-top: 0;
     }
 }
 
