@@ -1,12 +1,10 @@
-
-
 .slide {
   padding-top: 80px;
     padding-bottom: 40px;
 
     @include tablet {
       padding-top: 100px;
-        // padding-bottom: 80px;
+        padding-bottom: 80px;
     }
     @include desktop {
       padding-top: 140px;
@@ -123,7 +121,6 @@
     text-align: center;
   
     color: #131313;
-    margin-bottom: -25px;
     font-size: 20px;
     line-height: calc(37.2 / 20);
   
