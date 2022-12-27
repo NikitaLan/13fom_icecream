@@ -1,0 +1,57 @@
+// Модальное окно - Buy now modal - Kostiantyn Koshyk
+.franchise {
+  padding: 28px 24px;
+  text-align: center;
+
+  @include tablet {
+    // height: auto;
+    padding: 32px 60px;
+
+    & .franchise-title {
+      display: inline-block;
+      width: 322px;
+    }
+  }
+
+  & .franchise-title {
+    margin-bottom: 20px;
+
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+
+    color: var(--color-secondary);
+
+    @include tablet {
+    }
+  }
+
+  & .franchise-text {
+    margin-bottom: 24px;
+
+    text-align: left;
+    font-size: 14px;
+    line-height: 140%;
+    color: currentColor;
+
+    @include tablet {
+      width: 448px;
+    }
+  }
+
+  & .franchise-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    & .form__input {
+      margin-bottom: 0;
+    }
+
+    & .form__textarea {
+      margin-bottom: 24px;
+    }
+  }
+}
