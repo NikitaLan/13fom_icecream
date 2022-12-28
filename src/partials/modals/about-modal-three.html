@@ -1,0 +1,104 @@
+<!-- Modal About -->
+<div class="modal" data-modal="7">
+    <div class="modal-about">
+      <div class="modal-about__icon-wrap">
+        <button class="modal-btn-close js-modal-close" type="button">
+          <svg width="20" height="20">
+            <use href="./images/svg-sprite.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+      <p class="modal-about__title">Milkshakes</p>
+      <div class="modal-about__img--wrap milkshekes">
+        <img
+          class="modal-about__img"
+          srcset="
+            ./images/modals/modals/about-modal/buy-now3.png    1x,
+            ./images/modals/modals/about-modal/buy-now3@2x.png 2x
+          "
+          src="./images/modals/modals/about-modal/buy-now3.png"
+          alt="Chololate Icecream"
+          width="132"
+          height="132"
+        />
+      </div>
+      <ul class="composition">
+        <li class="composition__item milkshekes">
+          <div class="composition__weight milkshekes">
+            <span class="composition__namber">380</span>
+          </div>
+          <span class="composition__unit-measurement">kcal</span>
+        </li>
+        <li class="composition__item milkshekes">
+          <div class="composition__weight milkshekes">
+            <span class="composition__namber">8g</span>
+          </div>
+          <span class="composition__unit-measurement">Prote...</span>
+        </li>
+        <li class="composition__item milkshekes">
+          <div class="composition__weight milkshekes">
+            <span class="composition__namber">12,8g</span>
+          </div>
+          <span class="composition__unit-measurement">Fats</span>
+        </li>
+        <li class="composition__item milkshekes">
+          <div class="composition__weight milkshekes">
+            <span class="composition__namber">22,4g</span>
+          </div>
+          <span class="composition__unit-measurement">Carbs</span>
+        </li>
+      </ul>
+      <p class="modal-about__subtitle">Ingredients</p>
+      <ul class="ingredients">
+        <li class="ingredients__item">
+          <span>Milk</span>
+          <span>250ml</span>
+        </li>
+        <li class="ingredients__item">
+          <span>Ice</span>
+          <span>20g</span>
+        </li>
+        <li class="ingredients__item">
+          <span>Vanilla ice-cream</span>
+          <span>80g</span>
+        </li>
+        <li class="ingredients__item">
+          <span>Whipped cream</span>
+          <span>20g</span>
+        </li>
+        <!-- <li class="ingredients__item">
+          <span>Sugar</span>
+          <span>40g</span>
+        </li> -->
+        <li class="ingredients__item">
+          <span>Oreo cookies</span>
+          <span>1peice</span>
+        </li>
+      </ul>
+      <form>
+        <input
+          type="text"
+          name="user-name"
+          class="form__input"
+          placeholder="Name"
+          pattern="[A-Za-z]{1,15}"
+          required
+        />
+        <input
+          type="tel"
+          name="user-tel"
+          class="form__input"
+          placeholder="Phone"
+          pattern="^[0-9]+$"
+          required
+        />
+        <textarea
+          name="user-comment"
+          class="form__textarea"
+          placeholder="Comment"
+        ></textarea>
+        <button type="submit" class="modal__button">Submit</button>
+      </form>
+    </div>
+  </div>
+  

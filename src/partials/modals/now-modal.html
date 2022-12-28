@@ -57,7 +57,9 @@
         type="text"
         name="user-name"
         class="form__input"
+        pattern="[A-Za-z]{1,15}"
         placeholder="Name"
+
         required
       />
       <input
@@ -65,6 +67,7 @@
         name="user-tel"
         class="form__input"
         placeholder="Phone"
+        pattern="^[0-9]+$"
         required
       />
       <textarea
