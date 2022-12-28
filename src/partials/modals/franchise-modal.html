@@ -29,6 +29,7 @@
         name="user-name"
         class="form__input"
         placeholder="Name"
+        pattern="[A-Za-z]{1,15}"
         required
       />
       <input
@@ -36,6 +37,7 @@
         name="user-tel"
         class="form__input"
         placeholder="Phone"
+        pattern="^[0-9]+$"
         required
       />
       <input
@@ -43,6 +45,7 @@
         name="user-mail"
         class="form__input"
         placeholder="e-mail"
+        pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$"
         required
       />
       <textarea

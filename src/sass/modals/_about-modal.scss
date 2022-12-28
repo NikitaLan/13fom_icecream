@@ -10,6 +10,12 @@
   border-radius: 10px;
   height: 100vh;
   overflow: auto;
+  & .form__input:not(:focus):not(:placeholder-shown):valid {
+    background-color: rgba(0, 128, 0, 0.276);
+  }
+  & .form__input:not(:focus):not(:placeholder-shown):invalid {
+    background-color: rgba(128, 0, 0, 0.276);
+  }
   
   @include tablet {
     width: 568px;
