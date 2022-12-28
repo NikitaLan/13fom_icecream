@@ -42,6 +42,12 @@
     right: 12px;
     border: none;
     background-color: transparent;
+    @include desktop {
+      width: 30px;
+      height: 30px;
+      top: 9px;
+      right: 7px;
+    }
   }
 }
 

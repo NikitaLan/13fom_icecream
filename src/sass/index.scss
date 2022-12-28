@@ -1,8 +1,8 @@
-@import './utils/common';
+@import './utils/variables';
 @import './utils/mixins';
+@import './utils/common';
 @import './utils/container';
 @import './base/reset';
-@import './utils/variables';
 @import './utils/breakpoints';
 @import './utils/placeholder';
 @import './utils/vis-hidden';

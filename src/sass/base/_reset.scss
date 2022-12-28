@@ -4,8 +4,7 @@ h3,
 h4,
 h5,
 p,
-ul 
-{
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -20,9 +19,12 @@ img {
   object-position: center;
 }
 
-a { 
-  text-decoration: none; 
+a {
+  text-decoration: none;
   text-transform: none;
+  @include desktop {
+    cursor: $cursor-link;
+  }
 }
 
 body {
@@ -31,10 +33,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.04em;
   margin: 0 auto;
-  
+  @include desktop {
+    cursor: $cursor-body;
+  }
+
   background-image: url(../images/products/bg-mobile.jpg);
   // background-size: cover;
-  background-position: center; 
+  background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
   // background-position: 50%;
@@ -64,12 +69,13 @@ body {
       background-image: url(../images/products/bg-desc@2x.jpg);
     }
   }
-
 }
 
 button {
   margin: 0;
   padding: 0;
   font-family: inherit;
-  cursor: pointer;
+  @include desktop {
+    cursor: $cursor-link;
+  }
 }
