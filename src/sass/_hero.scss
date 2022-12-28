@@ -7,10 +7,14 @@
   overflow: hidden;
   position: relative;
   max-width: $mobile;
+  padding-top: 50px;
+
   @include tablet {
+    padding-top: 14px;
     min-width: $tablet;
   }
   @include desktop {
+    padding-top: 45px;
     min-width: $desktop;
   }
 }
@@ -40,6 +44,7 @@
 
 summary {
   display: block;
+  cursor: $cursor-link;
 }
 
 summary::-webkit-details-marker {
@@ -74,7 +79,6 @@ details[open] > summary {
   }
 
   &__button {
-    cursor: $cursor;
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
@@ -94,7 +98,6 @@ details[open] > summary {
   }
 
   &__about {
-    cursor: $cursor;
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15 / 12);
@@ -117,7 +120,6 @@ details[open] > summary {
 
   &__product {
     z-index: 1;
-    cursor: $cursor;
     transition: background-color var(--transition-duration) var(--cubic-bezier);
   }
   &__button:hover,
@@ -215,7 +217,6 @@ details[open] > summary {
 // Descriptions --------------------
 
 .hero-description {
-  cursor: $cursor;
   display: none;
   position: absolute;
   @include tablet {
