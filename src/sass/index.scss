@@ -1,9 +1,9 @@
-@import './utils/common';
-@import './utils/mixins';
-@import './utils/container';
-@import './base/reset';
 @import './utils/variables';
 @import './utils/breakpoints';
+@import './utils/mixins';
+@import './base/reset';
+@import './utils/container';
+@import './utils/common';
 @import './utils/placeholder';
 @import './utils/vis-hidden';
 @import './modals/about-modal.scss';
