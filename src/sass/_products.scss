@@ -92,6 +92,18 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 87px) / 3);
   }
+
+  &.cream:hover, &.cream:focus {
+    box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+  }
+
+  &.coffee:hover, &.coffee:focus {
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  }
+  &.milkshake:hover, &.milkshake:focus {
+    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  }
+
 }
 
 // .products__list:hover::before, .products__list:focus::before {
