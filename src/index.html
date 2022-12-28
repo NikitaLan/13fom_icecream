@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>HotFixIcecream</title>
     <link rel="icon" href="./images/favikon.png" type="image/x-icon">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
@@ -20,10 +20,12 @@
     />
     <script type="module" src="./index.js"></script>
   </head>
-
+  
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/header.html"></include>
+    <header>
+       <include src="./partials/header.html"></include>
+    </header>
+   <main>
     <include src="./partials/hero.html"></include>
     <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
@@ -31,13 +33,15 @@
     <include src="./partials/gallery.html"></include>
     <include src="./partials/customer.html"></include>
     <include src="./partials/contacts.html"></include>
-    <include src="./partials/footer.html"></include>
-    <include src="./partials/modals/about-modal.html"></include>
+       <include src="./partials/modals/about-modal.html"></include>
     <include src="./partials/modals/franchise-modal.html"></include>
     <include src="./partials/modals/locations-modal.html"></include>
     <include src="./partials/modals/more-modal.html"></include>
     <include src="./partials/modals/now-modal.html"></include>
-
+   </main>
+<footer>
+  <include src="./partials/footer.html"></include>
+</footer>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
